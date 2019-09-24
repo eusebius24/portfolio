@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    background-color: #DDD;
+    color: #000;
+    text-align: center;
+}
+
+header {
+    height: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #AAA;
+}
+
+.mobile-nav {
+    float: right;
+    padding-right: 10px;
+}
+
+.hero {
+    margin-top: 75px;
+}
+
+.desktop-nav {
+    margin-top: 50px;
+}
+
+main {
+    margin-top: 250px;
+}
+
+.section {
+    height: 300px;
+    padding: 10px;
+}
+
+.section-2 {
+    background-color: #AAA;
+}
+
+footer {
+    background-color: #777676;
+    height: 50px;
+    padding-top: 10px;
