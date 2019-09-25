@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 200px;
+    height: 250px;
     position: fixed;
     top: 0;
     right: 0;
@@ -27,6 +27,7 @@ header {
 
 .hero {
     margin-top: 75px;
+
 }
 
 .desktop-nav {
