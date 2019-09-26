@@ -5,7 +5,7 @@
 body {
     font-family: Roboto, sans-serif;
     font-size: 20px;
-    background-color: #DDD;
+    background-color: #fff;
     color: #000;
     text-align: center;
 }
@@ -17,7 +17,8 @@ header {
     right: 0;
     left: 0;
     z-index: 10;
-    background-color: #AAA;
+    background-color:#6dc4d7;
+    color: #fff;
 }
 
 .mobile-nav {
@@ -30,31 +31,98 @@ header {
 
 }
 
+.hero h1 {
+    font-family: Raleway, sans-serif;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid white;
+}
+
 .desktop-nav {
     margin-top: 70px;
 }
 
 main {
-    margin-top: 250px;
+    margin-top: 270px;
     height: 200vh;
+    
 }
 
 .section {
-    height: 100vh;
-    padding: 10px;
-    padding-bottom: 50px;
+    height: 30vh;
+    padding: 20px;
+    
+    width: 80%;
+    margin: auto;
+    
 }
 
+
+
+.section-1 {
+    font-size: 18px;
+    line-height: 1.5;
+}
 .section-2 {
-    background-color: #AAA;
-    height: 100vh;
+    background-color: #C4EEF1;
+    height: 75vh;
     width: 100%;
-    margin-top: 20vh;
-    padding-bottom: 40%;
+    margin: 40vh 0 40vh 0;
+    padding: 10%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+ h2, h3 {
+    font-family: Raleway, sans-serif;
+    color: #3B6F73;
+}
+
+.section p {
+    text-align: left;
+    font-size: 20px;
 }
 
 footer {
-    background-color: #777676;
+    
     height: 50px;
     padding-top: 10px;
-    margin-top: 50px;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width: 350px) {
+
+    header {
+        max-height: 300px;
+    }
+    .main {
+        margin-top: 1000px;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    .section p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 800px) {
+   
+    main {
+        width: 650px;
+        margin: auto;
+        margin-top: 300px;
+    }
+  
+}
+
