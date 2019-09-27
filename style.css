@@ -101,7 +101,7 @@ display: block;
 }
 main {
     margin-top: 270px;
-    height: 350vh;
+   
     
 }
 
@@ -110,7 +110,7 @@ main {
 }
 
 .section {
-    height: 30vh;
+   
     padding: 20px;
     
     width: 80%;
@@ -123,17 +123,17 @@ main {
     margin-top: -300px;
     margin-bottom: 300px;
     display: block;
-    height: 0;
+    
 }
 
 .section-1 {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 500px;
+    
 }
 .section-2 {
     background-color: #C4EEF1;
-    min-height: 150vh;
+    
     width: 100%;
     margin: 20vh 0 0 -20;
     padding: 5%;
@@ -182,9 +182,7 @@ main {
     margin-top: 20px;
 }
 
-footer {
-    margin-top: -400px;
-}
+
 
 .contact-logos {
     display: flex;
