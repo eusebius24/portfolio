@@ -8,31 +8,96 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav role="navigation" class="mobile-nav">
-            Nav (Mobile)
+                <div class="topnav">
+                        <!-- Navigation links (hidden by default) -->
+                        <div id="myLinks">
+                          <a href="#bio">Bio</a>
+                          <a href="#portfolio">Portfolio</a>
+                          <a href="#contact">Contact</a>
+                        </div>
+                        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                 </div>
         </nav>
         <section class="hero">
             <h1>Hi, my name is Erika.</h1>
-            <nav role="navigation" class="desktop-nav">Nav (Desktop)</nav>
+            <nav role="navigation" class="desktop-nav">
+                <ul>
+                    <li><a href="#bio">BIO</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
         </section>
         
     </header>
+    
     <main> 
-        <section class="section section-1">
+            
+        <section class="section section-1" >
+            <a name="bio" id="bio"></a>
             <h2>I’m a full stack Web developer.</h2>
-            <p>I love both the problem-solving and design aspects of coding and I’m passionate about creating a maximally functional, flowing user experience.  I’m also a professional-level pianist and an insatiable reader.  More coffee is never a bad thing!
+            <div class="bio-content">
+                <img class="main-image" src="images/Erika.jpg" alt="Erika sitting at piano">
+                <p class="bio-text">I love both the problem-solving and design aspects of coding and I’m passionate about creating a maximally functional, flowing user experience.  I’m also a professional-level pianist and an insatiable reader.  More coffee is never a bad thing!
                 </p>
+            </div>
         </section>
         <section class="section section-2">
+            <a name="portfolio" id="portfolio"></a>
             <h2> Portfolio</h2>
             <h3>Beethoven Quiz</h3>
-
-                    <p>This is a 10-question quiz about the composer Ludwig van Beethoven. It tests the user's knowledge of Beethoven using simple HTML forms, keeps track of the user's score and rates the user's achievement level at the end of the quiz. The user has the option to try the quiz again on completion.</p>
+            <div class="bio-content">
+                <a href="http://eusebius24.github.io/beethoven-quiz-final" target="_blank"><img class="screenshot" src="images/beethoven-quiz-screenshot.png" alt="Screenshot of Beethoven quiz app"></a>
+                <p class="portfolio-text">This is a 10-question quiz about the composer Ludwig van Beethoven. It tests the user's knowledge of Beethoven using simple HTML forms, keeps track of the user's score and rates the user's achievement level at the end of the quiz. The user has the option to try the quiz again on completion.</p>
+            </div>
+            <a href="http://eusebius24.github.io/beethoven-quiz-final" target="_blank">Live quiz link</a>
+            <a href="https://github.com/eusebius24/beethoven-quiz-final" target="_blank">GitHub repository</a>
+            <h3>Technologies used:</h3>
+            <ul class="logos">
+                <li><img class="logo" src="images/HTML5_Logo.png" alt='HTML 5 Logo'></li>
+                <li><img class="logo" src="images/CSS3_logo.png" alt='CSS 3 Logo'></li>
+                <li><img class="logo" src="images/JavascriptLogo.png" alt='JavaScript Logo'></li>
+                <li><img class="logo jquery" src="images/jQuery-Logo.png" alt='jQuery Logo'></li>
+            </ul>
         </section> 
     </main>
-    <footer role="contentinfo">Contact</footer>
+    <footer role="contentinfo" id="contact">
+        <h3>Contact</h3>
+        <div class="contact-logos">
+            <a href="mailto:erika.reiman@gmail.com" target="_blank"><img class="logo" src="images/email.png" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/erika-reiman-38280825" target+"_blank"><img class="logo" src="images/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://github.com/eusebius24"><img class="logo" src="images/GitHub.png" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header").style.fontSize = "16px";
+    document.getElementById("header").style.minHeight = "0";
+  } else {
+    document.getElementById("header").style.fontSize = "24px";
+    document.getElementById("header").style.minHeight = "200px";
+  }
+}
+    </script>
 </body>
 </html>

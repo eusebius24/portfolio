@@ -13,17 +13,47 @@ body {
 header {
     min-height: 250px;
     position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
     background-color:#6dc4d7;
     color: #fff;
+    transition: 0.2s;
+    padding-bottom: 20px;
 }
 
 .mobile-nav {
     float: right;
     padding-right: 10px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #6dc4d7;
+    color: #fff;
+    position: relative;
+  }
+
+.topnav #myLinks {
+display: none;
+}
+
+.topnav a {
+color: white;
+padding: 10px 12px;
+text-decoration: none;
+font-size: 25px;
+display: block;
+}
+
+#myLinks a {
+    font-size: 16px;
+}
+
+.fa-bars {
+    font-size: 25px;
 }
 
 .hero {
@@ -41,12 +71,42 @@ header {
 
 .desktop-nav {
     margin-top: 70px;
+    display: flex;
+    margin: 0 auto;
 }
 
+.desktop-nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.desktop-nav > ul {
+    list-style-type: none;
+    display: flex;
+    
+    margin: auto;
+    margin-top: 80px;
+}
+
+.desktop-nav > ul > li {
+   margin-right: 50px;
+    
+}
+
+#bio {
+    margin-top: -300px;
+    margin-bottom: 300px;
+    display: block;
+    height: 0;
+}
 main {
     margin-top: 270px;
-    height: 200vh;
+    height: 250vh;
     
+}
+
+.main-image {
+    height: 300px;
 }
 
 .section {
@@ -55,27 +115,46 @@ main {
     
     width: 80%;
     margin: auto;
+   
     
 }
 
-
+#portfolio {
+    margin-top: -300px;
+    margin-bottom: 300px;
+    display: block;
+    height: 0;
+}
 
 .section-1 {
     font-size: 18px;
     line-height: 1.5;
+    margin-bottom: 400px;
 }
 .section-2 {
     background-color: #C4EEF1;
-    height: 75vh;
+    height: 140vh;
     width: 100%;
-    margin: 40vh 0 40vh 0;
-    padding: 10%;
+    margin: 20vh 0 0 -20;
+    padding: 5%;
     font-size: 18px;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-2 a {
+    text-decoration: none;
+    color: #3B6F73;
 }
  h2, h3 {
     font-family: Raleway, sans-serif;
     color: #3B6F73;
+}
+
+.screenshot {
+    text-align: center;
+    margin: auto;
 }
 
 .section p {
@@ -83,12 +162,33 @@ main {
     font-size: 20px;
 }
 
-footer {
-    
+.logos {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+}
+.logo {
     height: 50px;
-    padding-top: 10px;
-    margin-top: 10px;
+    justify-content: space-between;
+    margin: auto;
+    margin-right: 20px;
+}
 
+.jquery {
+    width: 100px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: -50px;
+}
+
+.contact-logos {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 350px) {
@@ -106,7 +206,7 @@ footer {
 @media screen and (max-width: 600px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 30px;
     }
     .section p {
         font-size: 16px;
@@ -115,14 +215,52 @@ footer {
     h2 {
         font-size: 1.5rem;
     }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .screenshot {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .mobile-nav {
+        display: none;
+    }
 }
 @media screen and (min-width: 800px) {
    
     main {
-        width: 650px;
+        width: 850px;
         margin: auto;
         margin-top: 300px;
     }
   
+    .bio-content {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .main-image, .screenshot {
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .screenshot {
+        width: 60%;
+        margin-top: 70px;
+        
+    }
+
+    .bio-text {
+        width: 60%;
+    }
+
+    .portfolio-text {
+        width: 40%
+    }
 }
 
