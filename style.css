@@ -101,7 +101,7 @@ display: block;
 }
 main {
     margin-top: 270px;
-    height: 250vh;
+    height: 350vh;
     
 }
 
@@ -129,11 +129,11 @@ main {
 .section-1 {
     font-size: 18px;
     line-height: 1.5;
-    margin-bottom: 400px;
+    margin-bottom: 500px;
 }
 .section-2 {
     background-color: #C4EEF1;
-    height: 140vh;
+    min-height: 150vh;
     width: 100%;
     margin: 20vh 0 0 -20;
     padding: 5%;
@@ -183,7 +183,7 @@ main {
 }
 
 footer {
-    margin-top: -50px;
+    margin-top: -400px;
 }
 
 .contact-logos {
