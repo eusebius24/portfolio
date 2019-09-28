@@ -26,14 +26,11 @@ header {
 
 header.sticky {
     font-size: 0.5em;
-    height: 125px
+    height: 125px;
     
 }
 
-h1.h1sticky {
-    margin-bottom: 75px;
-    margin-top: -20px;
-}
+
 .mobile-nav {
     float: right;
     padding-right: 10px;
@@ -77,13 +74,15 @@ display: block;
     margin: 0 auto;
     padding: 10px;
     border: 2px solid white;
+    text-align: center;
 }
+
 
 .desktop-nav {
     margin-top: 70px;
     display: flex;
     margin: 0 auto;
-    margin-left: 50px;
+    
 }
 
 .desktop-nav a {
@@ -95,13 +94,17 @@ display: block;
     list-style-type: none;
     display: flex;
     
-    margin: auto;
+    margin: 0 auto;
     margin-top: 80px;
 }
 
 .desktop-nav > ul > li {
-   margin-right: 50px;
-    
+   margin-right: 40px;
+    justify-content:  space-around;
+}
+
+.desktopSticky {
+    margin-top: -70px;
 }
 
 #bio {
@@ -222,8 +225,12 @@ main {
 
 @media screen and (max-width: 600px) {
 
+    header {
+        max-height: 200px;
+    }
+
     h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
     .section p {
         font-size: 16px;
@@ -241,11 +248,7 @@ main {
         width: 75%;
     }
 
-    header.sticky {
-        font-size: 0.5em;
-        height: 150px;
-        
-    }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -253,9 +256,7 @@ main {
         display: none;
     }
 
-    .desktop-nav {
-        margin-left: 40px;
-    }
+   
 }
 @media screen and (min-width: 800px) {
    

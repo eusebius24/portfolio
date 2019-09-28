@@ -93,27 +93,26 @@
             }
         }
 
-        function isMobile() {
-            if (/Android|WebOS|iPhone|iPad|iPod|Blackberry/i.test(navigator.userAgent)) {
-                return true;
-            }
-        }
-    if (!isMobile) {
-        $(window).scroll(function() {
-            if (($(this).scrollTop() > 250){  
+        
+        
+       $(document).ready(function (){
+                $(window).scroll(function() {
+         
+                if ($(this).scrollTop() > 250){  
                 $('header').addClass("sticky");
-                $('h1').addClass('h1sticky');
-                $('.desktop-nav').hide();
-                $('.mobile-nav').show();
+                $('.desktop-nav').addClass("desktopSticky");
+                
             }
-            else{
+            else {
                 $('header').removeClass("sticky");
-                $('h1').removeClass('h1sticky');
-                $('.desktop-nav').show();
-                $('.mobile-nav').hide();
+                $(".desktop-nav").removeClass('desktopSticky');
+                
+                
             }
+         
         });
-}
+    
+    });
     </script>
   
 </body>
