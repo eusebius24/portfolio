@@ -27,9 +27,13 @@ header {
 header.sticky {
     font-size: 0.5em;
     height: 125px;
-    padding-bottom: 150px;
+    
 }
 
+h1.h1sticky {
+    margin-bottom: 75px;
+    margin-top: -20px;
+}
 .mobile-nav {
     float: right;
     padding-right: 10px;
@@ -63,7 +67,7 @@ display: block;
 }
 
 .hero {
-    margin-top: 75px;
+    margin-top: 50px;
 
 }
 

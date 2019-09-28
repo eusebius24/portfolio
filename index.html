@@ -96,11 +96,13 @@
     $(window).scroll(function() {
         if ($(this).scrollTop() > 250){  
             $('header').addClass("sticky");
+            $('h1').addClass('h1sticky');
             $('.desktop-nav').hide();
             $('.mobile-nav').show();
         }
         else{
             $('header').removeClass("sticky");
+            $('h1').removeClass('h1sticky');
             $('.desktop-nav').show();
             $('.mobile-nav').hide();
         }
