@@ -83,6 +83,7 @@ display: block;
     margin-top: 70px;
     display: flex;
     margin: 0 auto;
+    margin-left: 50px;
 }
 
 .desktop-nav a {
@@ -239,11 +240,21 @@ main {
     .screenshot {
         width: 75%;
     }
+
+    header.sticky {
+        font-size: 0.5em;
+        height: 150px;
+        
+    }
 }
 
 @media screen and (min-width: 600px) {
     .mobile-nav {
         display: none;
+    }
+
+    .desktop-nav {
+        margin-left: 40px;
     }
 }
 @media screen and (min-width: 800px) {
