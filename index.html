@@ -93,20 +93,27 @@
             }
         }
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 250){  
-            $('header').addClass("sticky");
-            $('h1').addClass('h1sticky');
-            $('.desktop-nav').hide();
-            $('.mobile-nav').show();
+        function isMobile() {
+            if (/Android|WebOS|iPhone|iPad|iPod|Blackberry/i.test(navigator.userAgent)) {
+                return true;
+            }
         }
-        else{
-            $('header').removeClass("sticky");
-            $('h1').removeClass('h1sticky');
-            $('.desktop-nav').show();
-            $('.mobile-nav').hide();
-        }
-    });
+    if (!isMobile) {
+        $(window).scroll(function() {
+            if (($(this).scrollTop() > 250){  
+                $('header').addClass("sticky");
+                $('h1').addClass('h1sticky');
+                $('.desktop-nav').hide();
+                $('.mobile-nav').show();
+            }
+            else{
+                $('header').removeClass("sticky");
+                $('h1').removeClass('h1sticky');
+                $('.desktop-nav').show();
+                $('.mobile-nav').hide();
+            }
+        });
+}
     </script>
   
 </body>
