@@ -171,6 +171,10 @@ main {
     margin: auto;
 }
 
+.perfsearch-screenshot {
+    width: 300px;
+}
+
 .section p {
     text-align: left;
     font-size: 20px;
@@ -281,6 +285,11 @@ main {
         width: 60%;
         margin-top: 70px;
         
+    }
+
+    .perfsearch-screenshot {
+        width: 60%;
+
     }
 
     .bio-text {
