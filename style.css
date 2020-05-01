@@ -184,8 +184,11 @@ main {
     list-style-type: none;
     display: flex;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
     margin-top: -10px;
+}
+.logos2 {
+    margin-left: 20%;
 }
 .logo {
     height: 50px;
@@ -215,6 +218,12 @@ main {
     margin: 0 auto;
 }
 
+.links2 {
+    margin-left: 40%;
+    text-decoration: none;
+    color: #3B6F73;
+}
+
 @media screen and (max-width: 350px) {
 
     header {
@@ -222,19 +231,55 @@ main {
     }
     .main {
         margin-top: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section {
+        width: 120%;
+        margin: 0 auto;
+       margin-left: 5%;
+    }
+    
+    .logos, .logos2 {
+        margin-left: -5%;
     }
 
-    
+    .links2 {
+        margin-left: 30%;
+    }
+
+    .section-1 a {
+        text-decoration: none;
+        color: #3B6F73;
+    }
+
+    footer {
+        margin-left: 30%;
+    }
 }
 
 @media screen and (max-width: 600px) {
 
     header {
         max-height: 200px;
+        max-width: 100%;
     }
 
-    h1 {
+   .hero h1 {
         font-size: 24px;
+        text-align: center;
+        margin-left: -15%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 30%;
     }
     .section p {
         font-size: 16px;
@@ -250,6 +295,10 @@ main {
 
     .screenshot {
         width: 75%;
+    }
+
+    .logos2 {
+        margin-left: -20%;
     }
 
 
@@ -298,6 +347,11 @@ main {
 
     .portfolio-text {
         width: 40%
+    }
+
+    .section-1 a {
+        text-decoration: none;
+        color: #3B6F73;
     }
 }
 
